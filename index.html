@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#111111">
+  <title></title>
+
+  <!-- Шрифты
+  <link rel="preload" href="./fonts/.woff2" as="font" type="font/woff2" crossorigin>-->
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="page__body">
+  <div class="container">
+    <header class="header">
+      <div class="header__logo"><img src="./img/logo.svg" alt=""></div>
+      <h1 class="title">Расписание</h1>
+      <ul class="header__phone">
+        <li class="header__phone-item"><a href="tel:+79108001004">+7 910 800-10-04</a></li>
+        <li class="header__phone-item"><a href="tel:+79010810024">+7 901 081-00-24</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="main__column">
+        <div class="main__tile tile">
+          <div class="tile__heading">
+            <h2 class="tile__title">Занятия</h2>
+            <button class="tile__filter">Фильтр</button>
+          </div>
+          <div class="tile__body">
+            <div class="tile__columns">
+              <span class="tile__columns-item">Дата и время</span>
+              <span class="tile__columns-item">Ученик</span>
+              <span class="tile__columns-item">Преподаватель</span>
+              <span class="tile__columns-item">Зал</span>
+            </div>
+            <div class="tile__lines">
+              <div class="tile__line">
+                <div class="tile__lines-item tile__lines_date">04.26.2024 18:00</div>
+                <a class="tile__lines-item tile__lines_student" href="#">Иванов-Петров И. И.</a>
+                <a class="tile__lines-item tile__lines_teacher" href="#">Мэддисон И. В.</a>
+                <div class="tile__lines-item tile__lines_room">1</div>
+              </div>
+              <div class="tile__line">
+                <div class="tile__lines-item tile__lines_date">04.26.2024 18:00</div>
+                <a class="tile__lines-item tile__lines_student" href="#">Иванов-Петров И. И.</a>
+                <a class="tile__lines-item tile__lines_teacher" href="#">Мэддисон И. В.</a>
+                <div class="tile__lines-item tile__lines_room">2</div>
+              </div>
+              <div class="tile__line">
+                <div class="tile__lines-item tile__lines_date">24.40.2034 12:62</div>
+                <a class="tile__lines-item tile__lines_student" href="#">Иванов-Петров И. И.</a>
+                <a class="tile__lines-item tile__lines_teacher" href="#">Мэддисон И. В.</a>
+                <div class="tile__lines-item tile__lines_room">1</div>
+              </div>
+              <div class="tile__line">
+                <div class="tile__lines-item tile__lines_date">04.26.2024 18:00</div>
+                <a class="tile__lines-item tile__lines_student" href="#">Иванов-Петров И. И.</a>
+                <a class="tile__lines-item tile__lines_teacher" href="#">Мэддисон И. В.</a>
+                <div class="tile__lines-item tile__lines_room">2</div>
+              </div>
+              <div class="tile__line">
+                <div class="tile__lines-item tile__lines_date">04.26.2024 18:00</div>
+                <a class="tile__lines-item tile__lines_student" href="#">Иванов-Петров И. И.</a>
+                <a class="tile__lines-item tile__lines_teacher" href="#">Мэддисон И. В.</a>
+                <div class="tile__lines-item tile__lines_room">1</div>
+              </div>
+              <div class="tile__line">
+                <div class="tile__lines-item tile__lines_date">04.26.2024 18:00</div>
+                <a class="tile__lines-item tile__lines_student" href="#">Иванов-Петров И. И.</a>
+                <a class="tile__lines-item tile__lines_teacher" href="#">Мэддисон И. В.</a>
+                <div class="tile__lines-item tile__lines_room">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__column">
+        <div class="main__tile tile">
+          <h2 class="tile__title">Добавить занятие</h2>
+          <p class="tile__subtitle">Lorem ipsum dolor sit amet consectetur. Curabitur volutpat fermentum auctor dolor posuere a sit. Orci sit.</p>
+          <form class="tile__add">
+            <div class="tile__parameters">
+              <div class="tile__parameters-item">
+                <span class="tile__parameters-name">Дата и время: </span>
+                <label><input type="date" value="2024-05-18" minvalue="2024-05-18"></label>
+              </div>
+              <div class="tile__parameters-item">
+                <span class="tile__parameters-name">Ученик: </span>
+                <select name="select">
+                  <option value="value1">Бабаев М. К.</option>
+                  <option value="value2" selected>Синотова Л. Л.</option>
+                  <option value="value3">Петров П. И.</option>
+                </select>
+              </div>
+              <div class="tile__parameters-item">
+                <span class="tile__parameters-name">Преподаватель: </span>
+                <select name="select">
+                  <option value="value1">Мэддисон И. В.</option>
+                  <option value="value2" selected>Сараев И. В.</option>
+                  <option value="value3">Бураков И. В.</option>
+                </select>
+              </div>
+              <div class="tile__parameters-item">
+                <span class="tile__parameters-name">Зал: </span>
+                <select name="select">
+                  <option value="value1" selected>1</option>
+                  <option value="value2">2</option>
+                </select>
+              </div>
+            </div>
+            <button class="tile__add-button" type="submit">Добавить</button>
+          </form>
+        </div>
+        <div class="control-buttons">
+          <button class="change">Изменить</button>
+          <button class="delete">Удалить</button>
+        </div>
+      </div>
+    </main>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="./students.html">Ученики</a></li>
+        <li class="navigation__item _active"><a href="./schedule.html">Расписание</a></li>
+        <li class="navigation__item"><a href="./teachers.html">Преподаватели</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/jquery.maskedinput.min.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
